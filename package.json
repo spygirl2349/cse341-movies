@@ -1,0 +1,27 @@
+{
+  "name": "cse341-movies",
+  "version": "1.0.0",
+  "description": "project 02 for wk 3 and 4 of cse 341",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spygirl2349/cse341-movies.git"
+  },
+  "author": "Annabelle Ruiz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/spygirl2349/cse341-movies/issues"
+  },
+  "homepage": "https://github.com/spygirl2349/cse341-movies#readme",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "mongodb": "^6.11.0",
+    "mongoose": "^8.8.3"
+  }
+}
