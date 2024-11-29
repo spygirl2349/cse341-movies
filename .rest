@@ -1,0 +1,40 @@
+###
+GET http://localhost:3000/movies
+
+### Create Movie
+POST http://localhost:3000/movies HTTP/1.1
+content-type: application/json
+
+{
+"title": "Kung Fu Panda",
+"year": 2000,
+"genre": "Comedy/Adventure",
+"length": 94,
+"rating": "PG"
+}
+
+### PUT/update Movie
+PUT http://localhost:3000/movies/674a2a59295b6dc8b3491e16 HTTP/1.1
+content-type: application/json
+
+{
+"title": "Kung Fu Panda",
+"year": 2000,
+"genre": "Comedy/Adventure",
+"length": 94,
+"rating": "PG"
+}
+
+
+
+### DELETE Movie ***ADD ID***
+DELETE http://localhost:3000/movies/674a35b2864505b7fad8d0cb HTTP/1.1
+content-type: application/json
+
+# {
+#   "firstName": "Test",
+#   "lastName": "Ruiz",
+#   "email": "test@byui.edu",
+#   "favoriteColor": "Red",
+#   "birthday": "01/01"
+# }
