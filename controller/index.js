@@ -12,14 +12,14 @@ controllers.getMovies = async (req, res) => {
     //     res.status(200).json(data);
     // });
     const result = await movieModel.find();
-    console.log(result);
+    //console.log(result);
     res.setHeader('Content-Type', 'application/json');
     res.status(200).json(result);
 
 };
 
-//POST -- **** Doesn't work need to add line 32 response const to make it create
-//             instead of get
+//POST -- **** Doesn't work? line 34/33
+//             
 controllers.addMovie = async (req, res) => {
     //#swagger.tags=['Movies']
     const movie = {
@@ -29,8 +29,9 @@ controllers.addMovie = async (req, res) => {
         length: req.body.length,
         rating: req.body.rating
     };
-
-    const response = await movieModel.find()
+    console.log(movie);
+    const response = await movieModel.insertOne(movie);
+    // const response = await movieModel.save(movie)
 
     //check response
     if (response.acknowledged) {
