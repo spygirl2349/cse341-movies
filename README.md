@@ -15,3 +15,6 @@ x---- Add CRUD routes
 x-- Delete swagger-output.json file and regenerate
 x----Test CRUD on swagger
 x-- update .rest file to include movies (updated) and users testing
+
+-- Have swagger show 500 error when validation fails
+--

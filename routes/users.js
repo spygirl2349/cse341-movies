@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const controller = require('../controller/index');
-const v = require('../validator')
+//const v = require('../validator')
 
 // GET
 router.get('/', controller.getUsers);

@@ -2,15 +2,12 @@
   "swagger": "2.0",
   "info": {
     "title": "Movies API",
-    "description": "This is the movies api",
+    "description": "This is the movies and users api",
     "version": "1.0.0"
   },
   "host": "localhost:3000",
   "basePath": "/",
-  "schemes": [
-    "https",
-    "http"
-  ],
+  "schemes": ["https", "http"],
   "paths": {
     "/": {
       "get": {
@@ -24,13 +21,9 @@
     },
     "/movies/": {
       "get": {
-        "tags": [
-          "Movies"
-        ],
+        "tags": ["Movies"],
         "description": "",
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "OK"
@@ -41,9 +34,7 @@
         }
       },
       "post": {
-        "tags": [
-          "Movies"
-        ],
+        "tags": ["Movies"],
         "description": "",
         "parameters": [
           {
@@ -89,13 +80,9 @@
     },
     "/movies/{id}": {
       "get": {
-        "tags": [
-          "Movies"
-        ],
+        "tags": ["Movies"],
         "description": "",
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "parameters": [
           {
             "name": "id",
@@ -114,9 +101,7 @@
         }
       },
       "put": {
-        "tags": [
-          "Movies"
-        ],
+        "tags": ["Movies"],
         "description": "",
         "parameters": [
           {
@@ -166,9 +151,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "Movies"
-        ],
+        "tags": ["Movies"],
         "description": "",
         "parameters": [
           {
@@ -190,13 +173,9 @@
     },
     "/users/": {
       "get": {
-        "tags": [
-          "Users"
-        ],
+        "tags": ["Users"],
         "description": "",
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "OK"
@@ -207,9 +186,7 @@
         }
       },
       "post": {
-        "tags": [
-          "Users"
-        ],
+        "tags": ["Users"],
         "description": "",
         "parameters": [
           {
@@ -240,13 +217,9 @@
     },
     "/users/{id}": {
       "get": {
-        "tags": [
-          "Users"
-        ],
+        "tags": ["Users"],
         "description": "",
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "parameters": [
           {
             "name": "id",
@@ -265,9 +238,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "Users"
-        ],
+        "tags": ["Users"],
         "description": "",
         "parameters": [
           {
