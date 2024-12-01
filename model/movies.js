@@ -20,7 +20,13 @@ const movieSchema = new Schema({
     },
     rating: {
         type: String,
-        required: true
+        required: false
+    },
+    directors: {
+        type: [String]
+    },
+    streamingService: {
+        type: String
     }
 })
 

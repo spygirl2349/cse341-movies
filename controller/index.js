@@ -25,6 +25,7 @@ controllers.getMovies = async (req, res) => {
 };
 
 controllers.getOneMovie = async (req, res) => {
+    //#swagger.tags=['Movies']
     const movieId = new objectId(req.params.id);
     const result = await movieModel.find({ _id: movieId });
 
@@ -75,7 +76,9 @@ controllers.addMovie = async (req, res) => {
         year: req.body.year,
         genre: req.body.genre,
         length: req.body.length,
-        rating: req.body.rating
+        rating: req.body.rating,
+        directors: req.body.directors,
+        streamingService: req.body.streamingService
     };
     const response = await movieModel.insertMany(movie);
     // const response = await movieModel.save(movie)
@@ -89,6 +92,7 @@ controllers.addMovie = async (req, res) => {
 }
 
 controllers.createUser = async (req, res) => {
+    //#swagger.tags=['Users']
     const user = {
         username: req.body.username,
         password: req.body.password
@@ -114,7 +118,9 @@ controllers.updateMovie = async (req, res) => {
         year: req.body.year,
         genre: req.body.genre,
         length: req.body.length,
-        rating: req.body.rating
+        rating: req.body.rating,
+        directors: req.body.directors,
+        streamingService: req.body.streamingService
     };
 
     const response = await movieModel.replaceOne({ _id: movieId }, movie);
