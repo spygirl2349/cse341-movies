@@ -8,9 +8,9 @@ TODO:
 
 -- Make sure movies has 7 fields ( directors and something else)
 -- Update Schema and controller functions to match added fields ^
--- Create 2nd collection (users?)
--- Add Schema
--- Add CRUD functions in controller
--- Add CRUD routes
+x---- Create 2nd collection (users?)
+x---- Add Schema
+x---- Add CRUD functions in controller
+x---- Add CRUD routes
 -- Delete swagger-output.json file and regenerate
 -- update .rest file to include movies (updated) and users testing

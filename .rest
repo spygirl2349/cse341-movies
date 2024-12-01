@@ -1,4 +1,4 @@
-###
+### Get movies
 GET http://localhost:3000/movies
 
 ### Create Movie
@@ -26,7 +26,6 @@ content-type: application/json
 }
 
 
-
 ### DELETE Movie ***ADD ID***
 DELETE http://localhost:3000/movies/674a35b2864505b7fad8d0cb HTTP/1.1
 content-type: application/json
@@ -37,4 +36,42 @@ content-type: application/json
 #   "email": "test@byui.edu",
 #   "favoriteColor": "Red",
 #   "birthday": "01/01"
+# }
+
+
+
+### ***********************USERS********************************************
+### Get users
+GET http://localhost:3000/users
+
+### Get user by id
+GET http://localhost:3000/users/674bac1f875f4d2e58987e5f
+
+### Create User
+POST http://localhost:3000/users HTTP/1.1
+content-type: application/json
+
+{
+"username": "TomCruise",
+"password": "missionImpossible247"
+}
+
+### PUT/update User
+PUT http://localhost:3000/users/674a2a59295b6dc8b3491e16 HTTP/1.1
+content-type: application/json
+
+{
+"username": "JackieChan01",
+"password": "kungFufighting100"
+}
+
+
+
+### DELETE User ***ADD ID***
+DELETE http://localhost:3000/users/674baba983d037e040d4adf3 HTTP/1.1
+content-type: application/json
+
+# {
+# "username": "TomCruise",
+# "password": "missionImpossible247"
 # }
