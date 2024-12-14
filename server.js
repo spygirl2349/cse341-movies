@@ -3,6 +3,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const mongodb = require('./database/index.js');
+require('dotenv').config()
 
 //oauth req
 const passport = require('passport');
