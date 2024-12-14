@@ -13,6 +13,8 @@ Before pushing to github update host in swagger-output.json to:
 
 ```
 
+AND CHANGE IT TO HTTPS
+
 ### TODO:
 
 ## -- Have swagger show 500 error when validation fails
